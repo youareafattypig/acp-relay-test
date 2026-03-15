@@ -1,9 +1,9 @@
 # TASK.md - ACP Agent Relay State
 
 ## Current Agent
-- **Agent:** codex-personal
-- **Model:** codex/gpt-5.4 (extra-high thinking)
-- **Workspace:** personal
+- **Agent:** claude-opus
+- **Model:** Claude Code Opus 4.6
+- **Workspace:** N/A
 
 ## Relay Order
 1. `codex-business` — Codex 5.4 extra-high, 商業空間 ← **YOU ARE HERE**
@@ -23,12 +23,13 @@ When token quota is low (or task segment done):
 | Agent | Commit | Summary |
 |-------|--------|---------|
 | - | init | repo created, TASK.md initialized |
-| codex-business | TBD | add hello.py, handoff to codex-personal |
+| codex-business | 41edbac | add hello.py, handoff to codex-personal |
+| codex-personal | TBD | add hello2.py, handoff to claude-opus |
 
 ## Next Steps
-- [ ] 建立 hello2.py，內容：print("Hello from codex-personal")
-- [ ] 更新 TASK.md，把 Current Agent 改成 claude-opus
-- [ ] commit + push，然後開 Claude Code 接力
+- [ ] 建立 hello3.py，內容：print("Hello from claude-opus")
+- [ ] 更新 TASK.md，標記 relay test 完成
+- [ ] commit + push
 
 ## Notes
 - This is a relay test. No real task assigned yet.
